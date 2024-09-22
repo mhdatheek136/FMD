@@ -43,6 +43,9 @@ To run the project, you need to install the following libraries:
 ## Functionality
 The main idea of the system is to visually indicate when two individuals are too close to each other without wearing masks. This is accomplished by calculating the centroids of detected individuals' bounding boxes. The algorithm checks the heights of the bounding boxes to ensure they are of comparable size, preventing false positives from people of significantly different heights. The Euclidean distance between the centroids is calculated to determine if the individuals are within a predefined threshold. If they are too close, a line is drawn between them to signify a violation.
 
+## Model Path
+The trained face mask detection model can be found at `yolov8_training_01/weights/best.pt`.
+
 ## File Structure
 - `train.py`: Script for training the face mask detection model.
 - `test.py`: Script for testing the model's performance on validation data.
