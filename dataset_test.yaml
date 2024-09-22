@@ -1,0 +1,9 @@
+path: D:\Face_Mask_Detector\face_mask_dataset
+train: images/train
+val: images/test
+test: images/test
+nc: 3  # Number of classes
+names:
+  0: without_mask
+  1: with_mask
+  2: incorrect_mask
