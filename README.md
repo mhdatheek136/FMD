@@ -3,6 +3,10 @@
 ## Overview
 This Face Mask Detection System is designed to identify individuals wearing masks and detect violations when two people come too close without masks. The model was trained using the DRFMD dataset sourced from Kaggle.
 
+- **With Mask:** Green
+- **Without Mask:** Red
+- **Incorrect Mask:** Yellow
+
 ![Sample Detection](predict_data/img1.png) 
 
 ## Table 1: DRFMD Dataset Details
