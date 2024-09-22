@@ -7,7 +7,8 @@ This Face Mask Detection System is designed to identify individuals wearing mask
 - **Without Mask:** Red
 - **Incorrect Mask:** Yellow
 
-![Sample Detection](predict_data/img1.png) 
+![Sample Detection](predict_data/img7_output.png) 
+![Sample Detection](predict_data/img8_output.png) 
 
 ## Table 1: DRFMD Dataset Details
 
