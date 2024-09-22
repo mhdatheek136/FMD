@@ -36,7 +36,7 @@ mask_model = YOLO("yolov8_training_01/weights/best.pt")
 threshold_mask = 0.1
 
 # Load the image
-input_image_path = 'predict_data/image.jpg'  # Replace with your image path
+input_image_path = 'predict_data/img7.jpg'  # Replace with your image path
 image = cv2.imread(input_image_path)
 
 # Detect masks in the image
@@ -60,7 +60,7 @@ for mask_result in mask_results.boxes.data.tolist():
             people_without_masks.append((x1_face, y1_face, x2_face, y2_face))
 
         # Draw bounding box around the face
-        cv2.rectangle(image, (int(x1_face), int(y1_face)), (int(x2_face), int(y2_face)), color, 2)
+        cv2.rectangle(image, (int(x1_face), int(y1_face)), (int(x2_face), int(y2_face)), color, 3)
 
 # Draw lines between people without masks if they are too close
 for i, person1 in enumerate(people_without_masks):
